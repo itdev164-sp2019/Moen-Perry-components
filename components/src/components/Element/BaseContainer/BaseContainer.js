@@ -5,13 +5,13 @@ import { Flex, Box } from 'rebass'
 export const BaseContainer = ({ children, flex, ...props }) => {
   if (flex) {
     return (
-      <Flex {...props} className={props.className}>
+      <Flex {...props} className={props.className} bg ='magenta'>
         {children}
       </Flex>
     )
   } else {
     return (
-      <Box {...props} className={props.className}>
+      <Box {...props} className={props.className} bg ='yellow'>
         {children}
       </Box>
     )
