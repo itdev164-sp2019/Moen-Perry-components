@@ -6,7 +6,7 @@ import "./layout.css"
 import {ThemeProvider} from 'styled-components'
 import {Gray as theme } from '../themes/Gray'
 import {Footer,Main} from '../components/Element'
-import {Masthead} from '../components/Masthead'
+import {Masthead} from '../Masthead'
 
 
 const Layout = ({ children }) => (
@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div>
         <Masthead siteTitle={data.site.siteMetadata.title} height= "75px" />
         <div
           style={{
@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </Footer>
         </div>
-      </>
+      </div>
     )}
   />
   </ThemeProvider>
