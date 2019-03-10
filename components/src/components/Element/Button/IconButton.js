@@ -16,7 +16,7 @@ export const IconButton = styled(({ icon, ...props})=>{
 
 
 IconButton.defaultProps = {
-    size: 24
+    size: 60
 }
 
 IconButton.propTypes = {
